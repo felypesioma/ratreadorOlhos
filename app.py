@@ -11,17 +11,13 @@ while True:
     if faces:
         face = faces[0]
         
-        # Índices dos olhos (pode ajustar conforme necessário)
         left_eye = face[159]  # parte superior da íris esquerda
         right_eye = face[386]  # parte superior da íris direita
         left_center = face[468]  # centro da íris esquerda
         right_center = face[473]  # centro da íris direita
 
-        # Visualizando a posição dos olhos
         cv2.circle(img, left_center, 5, (0,255,0), cv2.FILLED)
         cv2.circle(img, right_center, 5, (0,255,0), cv2.FILLED)
-
-        # Você pode calcular deslocamentos horizontais para ver se a pupila está mais para esquerda ou direita
         left_eye_ratio = (left_center[0] - left_eye[0])
         right_eye_ratio = (right_center[0] - right_eye[0])
 
