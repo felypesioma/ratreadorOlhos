@@ -11,10 +11,10 @@ while True:
     if faces:
         face = faces[0]
         
-        left_eye = face[159]  # parte superior da íris esquerda
-        right_eye = face[386]  # parte superior da íris direita
-        left_center = face[468]  # centro da íris esquerda
-        right_center = face[473]  # centro da íris direita
+        left_eye = face[159]
+        right_eye = face[386] 
+        left_center = face[468] 
+        right_center = face[473] 
 
         cv2.circle(img, left_center, 5, (0,255,0), cv2.FILLED)
         cv2.circle(img, right_center, 5, (0,255,0), cv2.FILLED)
