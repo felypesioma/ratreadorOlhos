@@ -12,9 +12,9 @@ while True:
         face = faces[0]
         
         left_eye = face[159]
-        right_eye = face[386] 
-        left_center = face[468] 
-        right_center = face[473] 
+        right_eye = face[386]
+        left_center = face[468]
+        right_center = face[473]  
 
         cv2.circle(img, left_center, 5, (0,255,0), cv2.FILLED)
         cv2.circle(img, right_center, 5, (0,255,0), cv2.FILLED)
